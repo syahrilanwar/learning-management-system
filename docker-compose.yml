@@ -1,0 +1,43 @@
+services:
+  # backend:
+  #   build:
+  #     context: ./backend
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "5000:5000"
+  #   volumes:
+  #     - ./backend:/usr/src/app
+  #   networks:
+  #     - mern-network
+
+  # frontend:
+  #   build:
+  #     context: ./frontend
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "3000:80"
+  #   volumes:
+  #     - ./frontend:/usr/src/app
+  #   networks:
+  #     - mern-network
+
+  # mongodb:
+  #   image: mongo:latest
+  #   ports:
+  #     - "27017:27017"
+  #   environment:
+  #     MONGO_INITDB_ROOT_USERNAME: syahrilanwar
+  #     MONGO_INITDB_ROOT_PASSWORD: 123qweasdzxc
+  #     MONGO_INITDB_DATABASE: db_learning_management_system
+  #   volumes:
+  #     - mongodb-data:/data/db
+  #   networks:
+  #     - mern-network
+
+networks:
+  mern-network:
+    driver: bridge
+
+volumes:
+  mongodb-data:
+  
