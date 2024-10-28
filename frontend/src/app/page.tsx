@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Link from "next/link";
 
 export const metadata = {
   title: "Wataido",
@@ -7,10 +7,6 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>My page title</title>
-      </Head>
-
       <div className="bg-white min-h-screen">
         <header className="absolute inset-x-0 top-0 z-50">
           <nav
@@ -18,13 +14,10 @@ export default function Home() {
             aria-label="Global"
           >
             <div className="flex lg:flex-1">
-              <a
-                href="#"
-                className="-m-1.5 p-1.5 text-zinc-900 font-bold"
-              >
+              <Link href="/" className="-m-1.5 p-1.5 text-zinc-900 font-bold">
                 <span className="sr-only">Your App</span>
                 Wataido
-              </a>
+              </Link>
             </div>
             <div className="flex lg:hidden">
               <button
@@ -63,7 +56,7 @@ export default function Home() {
                 Features
               </a>
               <a
-                href="#"
+                href="#" 
                 className="text-sm font-semibold leading-6 text-zinc-900"
               >
                 Marketplace
@@ -90,10 +83,7 @@ export default function Home() {
             <div className="fixed inset-0 z-50"></div>
             <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-zinc-900/10">
               <div className="flex items-center justify-between">
-                <a
-                  href="#"
-                  className="-m-1.5 p-1.5 text-zinc-900 font-bold"
-                >
+                <a href="#" className="-m-1.5 p-1.5 text-zinc-900 font-bold">
                   <span className="sr-only">Your App</span>
                   Wataido
                 </a>
@@ -168,8 +158,9 @@ export default function Home() {
                 Wataido
               </h1>
               <p className="mt-8 text-pretty text-lg font-medium text-zinc-500 sm:text-xl/8">
-                &quot;Explore knowledge, sharpen your skills, and get ready to face
-                the world with confidence—an exciting future awaits you!&quot;
+                &quot;Explore knowledge, sharpen your skills, and get ready to
+                face the world with confidence—an exciting future awaits
+                you!&quot;
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a

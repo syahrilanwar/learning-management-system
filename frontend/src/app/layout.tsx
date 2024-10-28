@@ -1,4 +1,4 @@
-import "./globals.css";
+import "@/styles/globals.css";
 import { Plus_Jakarta_Sans } from "next/font/google";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -7,7 +7,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 export const metadata = {
   icons: {
-    icon: "/favicon.ico", // Path ke favicon
+    icon: "/favicon.ico",
   },
 };
 
